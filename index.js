@@ -20,6 +20,7 @@ app.use((req, res, next) => {
   next();
 });
 app.use(express.json());
+app.use('/student',student_routes)
 
 app.use((err, req, res, next) => {
   console.log(err.stack);
